@@ -1,0 +1,16 @@
+version: "3"
+services:
+  jupyterlab:
+    build:
+      context: .
+    user: root
+    ports:
+      - "7777:8888"
+    runtime: nvidia
+    volumes:
+      - "./notebooks:/notebooks"
+    environment:
+      NB_GID: ${GID}
+      NB_UID: ${UID}
+      GRANT_SUDO: "yes"
+    command: start.sh jupyter lab
