@@ -44,7 +44,7 @@ docker-compose.yaml の GID、UID をいれかえなくても
 
 ## 動作確認
 
-[ローカルの 8888 ポートにアクセスする。](http://localhost:7777)
+[ローカルの 7777 ポートにアクセスする。](http://localhost:7777)
 
 ## ホームディレクトリ
 
