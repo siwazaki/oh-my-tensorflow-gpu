@@ -47,6 +47,7 @@ RUN pip3 --no-cache-dir install \
   tensorflow-gpu \
   keras \
   h5py \
-  jupyterlab
+  jupyterlab \
+  scikit-learn  
 
 WORKDIR /notebooks
