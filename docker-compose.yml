@@ -1,4 +1,4 @@
-version: "3"
+version: "2.3"
 services:
   jupyterlab:
     build:
@@ -9,8 +9,4 @@ services:
     runtime: nvidia
     volumes:
       - "./notebooks:/notebooks"
-    environment:
-      NB_GID: ${GID}
-      NB_UID: ${UID}
-      GRANT_SUDO: "yes"
-    command: start.sh jupyter lab
+    command: jupyter lab --allow-root --ip=0.0.0.0 --no-browser --port=8888 --NotebookApp.token=''
