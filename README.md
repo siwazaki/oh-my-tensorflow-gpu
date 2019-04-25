@@ -1,6 +1,6 @@
 # oh-my-tensorflow-gpu
 
-```oh-my-tensorflow-gpu = jupyter lab tensorflow-gpu```
+```oh-my-tensorflow-gpu = jupyterlab + tensorflow-gpu```
 
 ## docker イメージのビルド
 
