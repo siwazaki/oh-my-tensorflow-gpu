@@ -5,8 +5,9 @@ services:
       context: .
     user: root
     ports:
-      - "7777:8888"
+      - "7779:8888"
     runtime: nvidia
     volumes:
       - "./notebooks:/notebooks"
+      - "/opt/storage:/opt/storage"
     command: jupyter lab --allow-root --ip=0.0.0.0 --no-browser --port=8888 --NotebookApp.token=''
